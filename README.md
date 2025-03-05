@@ -1,35 +1,58 @@
-# Matrix Path Finder Challenge
+# E-Commerce System Challenge
 
 ## Problem Statement
 
-You are given a matrix of integers. Your task is to find the length of the longest increasing path in the matrix.
-
-An increasing path is a path where each cell's value is greater than the previous cell's value. You can move up, down, left, or right from any cell.
+You are tasked with extending a simple e-commerce system. The system already has basic product and shopping cart functionality, but it needs to be enhanced with additional features.
 
 ## Objective
 
-Complete the implementation of the `longest_increasing_path` function in `path_finder.py` that calculates the length of the longest increasing path in the given matrix.
+Complete the implementation of the e-commerce system by:
 
-## Constraints
+1. Implementing the `DiscountStrategy` abstract class and its concrete strategy classes
+2. Extending the `ShoppingCart` class to apply discounts
+3. Creating a `Customer` class with loyalty tiers
+4. Implementing a product recommendation system
 
-- The matrix will have dimensions between 1x1 and 100x100.
-- The values in the matrix will be integers between -10^9 and 10^9.
-- You can only move in four directions: up, down, left, or right.
+## Requirements
 
-## Example
+### Discount Strategies
+- Implement `PercentageDiscount`: Applies a percentage discount to the total
+- Implement `BuyOneGetOneFree`: Applies a buy-one-get-one-free discount for specific products
+- Implement `LoyaltyDiscount`: Provides discounts based on customer loyalty tier
 
-```
-Input Matrix:
-[
-  [9, 9, 4],
-  [6, 6, 8],
-  [2, 1, 1]
-]
+### Customer Class
+- Create a `Customer` class with attributes for name, email, and loyalty tier
+- Implement methods to upgrade loyalty tier and calculate loyalty points
 
-Output: 4
+### Product Recommendation
+- Implement a simple recommendation system based on purchase history
+- Use appropriate design patterns to make the system extensible
 
-Explanation: The longest increasing path is [1, 2, 6, 9].
-Starting from matrix[2][1] -> matrix[2][0] -> matrix[1][0] -> matrix[0][0].
+## Example Usage
+
+```python
+# Create products
+product1 = Product("Laptop", 1000, "Electronics")
+product2 = Product("Headphones", 100, "Electronics")
+
+# Create customer
+customer = Customer("John Doe", "john@example.com")
+
+# Create shopping cart
+cart = ShoppingCart(customer)
+cart.add_item(product1, 1)
+cart.add_item(product2, 2)
+
+# Apply discount
+discount = PercentageDiscount(10)  # 10% discount
+cart.apply_discount(discount)
+
+# Get total
+print(f"Total: ${cart.get_total()}")  # Should apply the discount
+
+# Get recommendations
+recommendations = cart.get_recommendations()
+print("Recommended products:", recommendations)
 ```
 
 ## Testing
@@ -37,15 +60,15 @@ Starting from matrix[2][1] -> matrix[2][0] -> matrix[1][0] -> matrix[0][0].
 Run the tests to verify your solution:
 
 ```bash
-python test_path_finder.py
+python test_ecommerce.py
 ```
 
 ## Evaluation Criteria
 
 Your solution will be evaluated based on:
-1. Correctness
-2. Time and space complexity
+1. Proper use of OOP principles (inheritance, encapsulation, polymorphism)
+2. Code organization and design patterns
 3. Code quality and readability
-4. Edge case handling
+4. Extensibility of the solution
 
 Good luck! 
