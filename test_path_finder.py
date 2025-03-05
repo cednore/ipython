@@ -25,7 +25,7 @@ class TestPathFinder(unittest.TestCase):
     def test_column_matrix(self):
         """Test with a single column matrix."""
         matrix = [[5], [4], [3], [2], [1]]
-        self.assertEqual(longest_increasing_path(matrix), 1)
+        self.assertEqual(longest_increasing_path(matrix), 5)
     
     def test_decreasing_matrix(self):
         """Test with a matrix where all paths are decreasing."""
@@ -34,7 +34,7 @@ class TestPathFinder(unittest.TestCase):
             [6, 5, 4],
             [3, 2, 1]
         ]
-        self.assertEqual(longest_increasing_path(matrix), 1)
+        self.assertEqual(longest_increasing_path(matrix), 5)
     
     def test_zigzag_path(self):
         """Test with a matrix that has a zigzag increasing path."""
@@ -61,7 +61,7 @@ class TestPathFinder(unittest.TestCase):
             [-6, -5, -4],
             [-3, -2, -1]
         ]
-        self.assertEqual(longest_increasing_path(matrix), 9)
+        self.assertEqual(longest_increasing_path(matrix), 5)
     
     def test_mixed_values(self):
         """Test with a matrix that has mixed positive and negative values."""

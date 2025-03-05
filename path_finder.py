@@ -24,8 +24,6 @@ def longest_increasing_path(matrix: List[List[int]]) -> int:
     pass
 
 
-# Helper functions you might want to implement:
-
 def is_valid_cell(matrix: List[List[int]], row: int, col: int) -> bool:
     """
     Check if a cell is within the bounds of the matrix.
