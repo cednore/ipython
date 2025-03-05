@@ -1,52 +1,43 @@
-# Binary Tree Transformation Challenge
+# Matrix Path Finder Challenge
 
 ## Problem Statement
 
-You are given a binary tree and a target binary tree. Your task is to find the minimum number of operations needed to transform the original tree into the target tree.
+You are given a matrix of integers. Your task is to find the length of the longest increasing path in the matrix.
 
-The allowed operations are:
-1. **Delete a node**: Remove a leaf node from the tree.
-2. **Insert a node**: Add a new leaf node to the tree.
-3. **Change node value**: Modify the value of an existing node.
+An increasing path is a path where each cell's value is greater than the previous cell's value. You can move up, down, left, or right from any cell.
 
 ## Objective
 
-Complete the implementation of the `min_operations` function in `tree_transformer.py` that calculates the minimum number of operations required to transform the original tree into the target tree.
+Complete the implementation of the `longest_increasing_path` function in `path_finder.py` that calculates the length of the longest increasing path in the given matrix.
 
 ## Constraints
 
-- Each node in the tree has a value between 1 and 1000.
-- The number of nodes in each tree is between 1 and 100.
-- The solution should have optimal time and space complexity.
+- The matrix will have dimensions between 1x1 and 100x100.
+- The values in the matrix will be integers between -10^9 and 10^9.
+- You can only move in four directions: up, down, left, or right.
 
 ## Example
 
 ```
-Original Tree:
-    1
-   / \
-  2   3
- /
-4
+Input Matrix:
+[
+  [9, 9, 4],
+  [6, 6, 8],
+  [2, 1, 1]
+]
 
-Target Tree:
-    1
-   / \
-  2   5
- / \
-4   6
+Output: 4
+
+Explanation: The longest increasing path is [1, 2, 6, 9].
+Starting from matrix[2][1] -> matrix[2][0] -> matrix[1][0] -> matrix[0][0].
 ```
-
-The minimum operations required would be 2:
-- Insert node with value 6 as right child of node 2
-- Change node value from 3 to 5
 
 ## Testing
 
 Run the tests to verify your solution:
 
 ```bash
-python test_tree_transformer.py
+python test_path_finder.py
 ```
 
 ## Evaluation Criteria
