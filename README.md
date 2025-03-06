@@ -1,3 +1,91 @@
+# Python Array Manipulation Challenges
+
+This repository contains coding challenges focused on array manipulation in Python, designed to assess a candidate's ability to work with arrays (lists) and functional programming concepts.
+
+## Challenges Overview
+
+There are two levels of challenges:
+
+### 1. Basic Array Manipulation Challenge
+
+The basic challenge tests a candidate's ability to implement Python equivalents of JavaScript's map, reduce, and filter functions, along with other array operations.
+
+**Functions to implement:**
+- `my_map`: Similar to JavaScript's Array.map()
+- `my_filter`: Similar to JavaScript's Array.filter()
+- `my_reduce`: Similar to JavaScript's Array.reduce()
+- `flatten_array`: Flatten a nested array into a single list
+- `group_by`: Group array elements by a key
+- `chain_operations`: Chain multiple array operations together
+
+**Time Limit:** 10-15 minutes for a senior developer
+
+### 2. Advanced Array Manipulation Challenge
+
+The advanced challenge extends the basic challenge with more complex operations and functional programming concepts.
+
+**Functions to implement:**
+- `compose`: Create a function composition (f(g(x)))
+- `pipe`: Create a function pipeline (g(f(x)))
+- `memoize`: Create a memoized version of a function
+- `zip_with`: Apply a function to corresponding elements of multiple arrays
+- `partition`: Split an array into two arrays based on a predicate
+- `deep_map`: Apply a function to each element in a deeply nested array
+
+**Time Limit:** Additional 10-15 minutes
+
+## Instructions for Candidates
+
+### Basic Challenge:
+
+1. Open the `array_challenge.py` file
+2. Implement all the required functions
+3. Run the tests using: `python test_array_challenge.py`
+
+### Advanced Challenge:
+
+1. Open the `array_challenge_advanced.py` file
+2. Implement all the required functions
+3. Run the tests using: `python test_array_challenge_advanced.py`
+
+## Evaluation Criteria
+
+Candidates will be evaluated on:
+
+1. **Correctness**: Do the functions work as expected?
+2. **Code Quality**: Is the code clean, readable, and efficient?
+3. **Understanding**: Does the candidate demonstrate understanding of functional programming concepts?
+4. **Problem-Solving**: How does the candidate approach and solve the problems?
+
+## Tips for Interviewers
+
+- Start with the basic challenge and move to the advanced challenge if the candidate finishes quickly
+- Watch how the candidate approaches the problem
+- Note if they use list comprehensions, recursion, or other Python idioms
+- Pay attention to edge cases (empty lists, None values, etc.)
+- Discuss their implementation choices after they complete the challenge
+
+## Files in this Repository
+
+- `array_challenge.py`: Basic challenge for candidates
+- `test_array_challenge.py`: Tests for the basic challenge
+- `array_challenge_advanced.py`: Advanced challenge for candidates
+- `test_array_challenge_advanced.py`: Tests for the advanced challenge
+- `array_challenge_solution.py`: Solution for the basic challenge (for interviewers)
+- `array_challenge_advanced_solution.py`: Solution for the advanced challenge (for interviewers)
+
+## Running the Tests
+
+To run the tests for the basic challenge:
+```
+python test_array_challenge.py
+```
+
+To run the tests for the advanced challenge:
+```
+python test_array_challenge_advanced.py
+```
+
 # E-Commerce System Challenge
 
 ## Problem Statement

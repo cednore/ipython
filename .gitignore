@@ -21,7 +21,8 @@ var/
 *.egg
 
 # Solution file (hidden from candidates)
-solution.py
+
+*solution*
 
 # IDE files
 .idea/
